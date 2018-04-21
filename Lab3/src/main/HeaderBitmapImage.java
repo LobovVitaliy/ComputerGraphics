@@ -1,6 +1,7 @@
 package main;
 
 public class HeaderBitmapImage {
+	
 	private short type;                 // тип зображення або сигнатура
 	private long size;                  // розмір файлу
 	private short reserveField1;        // резервоване поле №1
@@ -139,29 +140,5 @@ public class HeaderBitmapImage {
     }
     public long getHalfOfWidth() {
     	return halfOfWidth;
-    }
-    
-    public void setValues(
-		short type, long size, short resF1, short resF2, long offs, long sHeader,
-		long w, long h, short nColPan, short bCount, long compr, long sComp,
-		long hRes, long vRes, long nUsCol, long nImpCol, long half
-    ) {
-    	setType(type);
-    	setSize(size);
-    	setReserveField1(resF1);
-    	setReserveField2(resF2);
-    	setOffset(offs);
-    	setSizeOfHeader(sHeader);
-    	setWidth(w);
-    	setHeight(h);
-    	setNumberOfColorPlanes(nColPan);
-    	setBitsCount(bCount);
-    	setCompression(compr);
-    	setSizeOfCompImage(sComp);
-    	setHorizontalResolution(hRes);
-    	setVerticalResolution(vRes);
-    	setNumbOfUsedColors(nUsCol);
-    	setNumbOfImportantColors(nImpCol);
-    	setHalfOfWidth(half);
     }
 }
